@@ -7,7 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.number-btn {
+	padding: 0 4px;
+	color: white;
+	border:0;
+	border-radius:4px;
+}
+
+.number-btn.minus {
+	background-color: #e22850;
+}
+
+.number-btn.plus {
+	background-color: #2ac3a2;
+}
+
+.number-btn[disabled] {
+	opacity: .5;
+}
+
+.number-value {
+	display: inline-block;
+	min-width: 30px;
+	text-align: center;
 }
